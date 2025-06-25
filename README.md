@@ -72,57 +72,18 @@ A blockchain-based land registry system that represents land deeds as NFTs on th
 (contract-call? .land-registry get-transfer-history u1)
 ```
 
+**`is-land-verified`** - Check if land is verified
+```clarity
+(contract-call? .land-registry is-land-verified u1)
+```
+
+**`has-pending-transfer`** - Check if land has pending transfer
+```clarity
+(contract-call? .land-registry has-pending-transfer u1)
+```
+
 ### 👥 Administration
 
 **`authorize-surveyor`** - Authorize a new surveyor (owner only)
-```clarity
-(contract-call? .land-registry authorize-surveyor 'SP2J6ZY48GV1EZ5V2V5RB9MP66SW86PYKKNRV9EJ7)
-```
-
-**`update-market-value`** - Update land market value (owner only)
-```clarity
-(contract-call? .land-registry update-market-value u1 u600000)
-```
-
-## 🔧 Usage Examples
-
-### Registering New Land
-1. Contract owner authorizes a surveyor
-2. Surveyor registers land with coordinates and details
-3. Contract owner verifies the land registration
-4. Land is now available for transfers
-
-### Transferring Land
-1. Current owner initiates transfer with buyer and price
-2. Buyer completes transfer by sending agreed STX amount
-3. NFT ownership transfers automatically
-4. Transfer is recorded in contract history
-
-## 🛡️ Security Features
-
-- ✅ Role-based access control
-- ✅ Transfer expiration (144 blocks ≈ 24 hours)
-- ✅ Verification requirement for transfers
-- ✅ Atomic transfer operations
-- ✅ On-chain payment escrow
-
-## 📈 Error Codes
-
-- `u100` - Not authorized
-- `u101` - Token not found
-- `u102` - Not owner
-- `u103` - Already exists
-- `u104` - Invalid transfer
-- `u105` - Transfer expired
-- `u106` - Insufficient payment
-- `u107` - Land not verified
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-```
-
+````clarity
+(contract-call? .land-registry authorize-surveyor 'SP2J6ZY48GV1EZ5V2V
