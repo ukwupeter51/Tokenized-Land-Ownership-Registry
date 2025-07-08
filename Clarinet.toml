@@ -9,6 +9,10 @@ requirements = []
 path = 'contracts/Tokenized-Land-Ownership-Registry.clar'
 clarity_version = 3
 epoch = 3.1
+[contracts.Land-Tax-Assessment-System]
+path = 'contracts/Land-Tax-Assessment-System.clar'
+clarity_version = 3
+epoch = 3.1
 [repl.analysis]
 passes = ['check_checker']
 
