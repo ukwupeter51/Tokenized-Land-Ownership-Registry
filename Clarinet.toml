@@ -17,6 +17,10 @@ epoch = 3.1
 path = 'contracts/Land-Valuation-History.clar'
 clarity_version = 3
 epoch = 3.1
+[contracts.Land-Escrow-Dispute-Resolution]
+path = 'contracts/Land-Escrow-Dispute-Resolution.clar'
+clarity_version = 3
+epoch = 3.1
 [repl.analysis]
 passes = ['check_checker']
 
