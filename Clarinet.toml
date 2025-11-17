@@ -1,0 +1,43 @@
+[project]
+name = 'Tokenized-Land-Ownership-Registry'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Tokenized-Land-Ownership-Registry]
+path = 'contracts/Tokenized-Land-Ownership-Registry.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.Land-Tax-Assessment-System]
+path = 'contracts/Land-Tax-Assessment-System.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.Land-Valuation-History]
+path = 'contracts/Land-Valuation-History.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.Land-Escrow-Dispute-Resolution]
+path = 'contracts/Land-Escrow-Dispute-Resolution.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.Land-Insurance-Tracker]
+path = 'contracts/Land-Insurance-Tracker.clar'
+clarity_version = 3
+epoch = 3.1
+[contracts.Land-Rental-Rights-Manager]
+path = 'contracts/Land-Rental-Rights-Manager.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
