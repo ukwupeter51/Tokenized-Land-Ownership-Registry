@@ -25,6 +25,10 @@ epoch = 3.1
 path = 'contracts/Land-Insurance-Tracker.clar'
 clarity_version = 3
 epoch = 3.1
+[contracts.Land-Rental-Rights-Manager]
+path = 'contracts/Land-Rental-Rights-Manager.clar'
+clarity_version = 3
+epoch = 3.1
 [repl.analysis]
 passes = ['check_checker']
 
